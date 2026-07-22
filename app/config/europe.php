@@ -1,0 +1,38 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'AT' => ['pt' => 'Áustria', 'en' => 'Austria', 'timezone' => 'Europe/Vienna'],
+    'BE' => ['pt' => 'Bélgica', 'en' => 'Belgium', 'timezone' => 'Europe/Brussels'],
+    'BG' => ['pt' => 'Bulgária', 'en' => 'Bulgaria', 'timezone' => 'Europe/Sofia'],
+    'CH' => ['pt' => 'Suíça', 'en' => 'Switzerland', 'timezone' => 'Europe/Zurich'],
+    'CY' => ['pt' => 'Chipre', 'en' => 'Cyprus', 'timezone' => 'Asia/Nicosia'],
+    'CZ' => ['pt' => 'Chéquia', 'en' => 'Czechia', 'timezone' => 'Europe/Prague'],
+    'DE' => ['pt' => 'Alemanha', 'en' => 'Germany', 'timezone' => 'Europe/Berlin'],
+    'DK' => ['pt' => 'Dinamarca', 'en' => 'Denmark', 'timezone' => 'Europe/Copenhagen'],
+    'EE' => ['pt' => 'Estónia', 'en' => 'Estonia', 'timezone' => 'Europe/Tallinn'],
+    'ES' => ['pt' => 'Espanha', 'en' => 'Spain', 'timezone' => 'Europe/Madrid'],
+    'FI' => ['pt' => 'Finlândia', 'en' => 'Finland', 'timezone' => 'Europe/Helsinki'],
+    'FR' => ['pt' => 'França', 'en' => 'France', 'timezone' => 'Europe/Paris'],
+    'GB' => ['pt' => 'Reino Unido', 'en' => 'United Kingdom', 'timezone' => 'Europe/London'],
+    'GR' => ['pt' => 'Grécia', 'en' => 'Greece', 'timezone' => 'Europe/Athens'],
+    'HR' => ['pt' => 'Croácia', 'en' => 'Croatia', 'timezone' => 'Europe/Zagreb'],
+    'HU' => ['pt' => 'Hungria', 'en' => 'Hungary', 'timezone' => 'Europe/Budapest'],
+    'IE' => ['pt' => 'Irlanda', 'en' => 'Ireland', 'timezone' => 'Europe/Dublin'],
+    'IS' => ['pt' => 'Islândia', 'en' => 'Iceland', 'timezone' => 'Atlantic/Reykjavik'],
+    'IT' => ['pt' => 'Itália', 'en' => 'Italy', 'timezone' => 'Europe/Rome'],
+    'LI' => ['pt' => 'Listenstaine', 'en' => 'Liechtenstein', 'timezone' => 'Europe/Vaduz'],
+    'LT' => ['pt' => 'Lituânia', 'en' => 'Lithuania', 'timezone' => 'Europe/Vilnius'],
+    'LU' => ['pt' => 'Luxemburgo', 'en' => 'Luxembourg', 'timezone' => 'Europe/Luxembourg'],
+    'LV' => ['pt' => 'Letónia', 'en' => 'Latvia', 'timezone' => 'Europe/Riga'],
+    'MT' => ['pt' => 'Malta', 'en' => 'Malta', 'timezone' => 'Europe/Malta'],
+    'NL' => ['pt' => 'Países Baixos', 'en' => 'Netherlands', 'timezone' => 'Europe/Amsterdam'],
+    'NO' => ['pt' => 'Noruega', 'en' => 'Norway', 'timezone' => 'Europe/Oslo'],
+    'PL' => ['pt' => 'Polónia', 'en' => 'Poland', 'timezone' => 'Europe/Warsaw'],
+    'PT' => ['pt' => 'Portugal', 'en' => 'Portugal', 'timezone' => 'Europe/Lisbon'],
+    'RO' => ['pt' => 'Roménia', 'en' => 'Romania', 'timezone' => 'Europe/Bucharest'],
+    'SE' => ['pt' => 'Suécia', 'en' => 'Sweden', 'timezone' => 'Europe/Stockholm'],
+    'SI' => ['pt' => 'Eslovénia', 'en' => 'Slovenia', 'timezone' => 'Europe/Ljubljana'],
+    'SK' => ['pt' => 'Eslováquia', 'en' => 'Slovakia', 'timezone' => 'Europe/Bratislava'],
+];

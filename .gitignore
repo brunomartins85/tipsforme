@@ -1,0 +1,51 @@
+# Segredos
+.env
+.env.*
+!.env.example
+__env_backup
+*env_backup*
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Logs
+*.log
+error_log
+**/error_log
+storage/logs/*
+!storage/logs/.gitkeep
+app/storage/logs/*
+!app/storage/logs/.gitkeep
+
+# Instaladores e temporários
+**/setup-admin.php
+**/*setup-admin*.php
+**/_-_setup-admin.php
+*.bak
+*.backup
+*.old
+*.tmp
+.DS_Store
+Thumbs.db
+
+# Dependências
+vendor/
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+
+# Bancos e dumps locais
+*.sqlite
+*.sqlite3
+*.db
+*.sql.gz
+*.dump
+
+# Compactados
+*.zip
+*.tar
+*.tar.gz
+*.rar

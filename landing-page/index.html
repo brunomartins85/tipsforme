@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>tipsforme — Divida gorjetas sem complicação</title>
+      <meta
+         name="description"
+         content="Registe e divida automaticamente as gorjetas em dinheiro e multibanco de cada turno."
+         >
+      <meta property="og:title" content="tipsforme — Divida gorjetas sem complicação">
+      <meta
+         property="og:description"
+         content="Uma forma simples, justa e transparente de dividir gorjetas entre colaboradores."
+         >
+      <meta property="og:type" content="website">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+      <style>
+         .mobile-navigation,
+         .mobile-menu-button {
+            display: none;
+         }
+
+         @media (max-width: 900px) {
+            .mobile-menu-button {
+               display: grid;
+            }
+         }
+      </style>
+      <link rel="stylesheet" href="./styles.css?v=20260721-2">
+      <script src="script.js?v=20260721-2" defer></script>
+   </head>
+   <body>
+      <header class="site-header">
+         <div class="container header-content">
+            <a class="brand" href="#top" aria-label="tipsforme">
+            <span class="brand-icon">
+            <span class="brand-dot"></span>
+            t
+            </span>
+            <span>tipsforme</span>
+            </a>
+            <nav class="desktop-nav" aria-label="Navegação principal">
+               <a href="#problem" data-i18n="navProblem">Problema</a>
+               <a href="#how" data-i18n="navHow">Como funciona</a>
+               <a href="#features" data-i18n="navFeatures">Funcionalidades</a>
+               <a href="#roadmap" data-i18n="navRoadmap">Roadmap</a>
+               <a href="#support" data-i18n="navSupport">Apoiar</a>
+            </nav>
+            <div class="header-actions">
+               <button
+                  id="languageButton"
+                  class="language-button"
+                  type="button"
+                  aria-label="Alterar idioma"
+               >
+                  <span class="material-symbols-outlined">translate</span>
+                  <span id="languageLabel">PT</span>
+               </button>
+
+               <a class="header-login-link" href="https://app.tipsforme.club/login">
+                  Entrar
+               </a>
+
+               <a class="button button-accent header-register-button" href="https://app.tipsforme.club/register">
+                  <span class="material-symbols-outlined">person_add</span>
+                  Criar conta grátis
+               </a>
+
+               <button
+                  id="mobileMenuButton"
+                  class="mobile-menu-button"
+                  type="button"
+                  aria-label="Abrir menu"
+                  aria-controls="mobileNavigation"
+                  aria-expanded="false"
+               >
+                  <span id="mobileMenuIcon" class="material-symbols-outlined">menu</span>
+               </button>
+            </div>
+         </div>
+
+         <nav
+            id="mobileNavigation"
+            class="mobile-navigation"
+            aria-label="Navegação móvel"
+            aria-hidden="true"
+            hidden
+         >
+            <div class="container mobile-navigation-content">
+               <a href="#problem" data-i18n="navProblem">Problema</a>
+               <a href="#how" data-i18n="navHow">Como funciona</a>
+               <a href="#features" data-i18n="navFeatures">Funcionalidades</a>
+               <a href="#roadmap" data-i18n="navRoadmap">Roadmap</a>
+               <a href="#support" data-i18n="navSupport">Apoiar</a>
+
+               <div class="mobile-account-actions">
+                  <a class="button button-secondary full-width" href="https://app.tipsforme.club/login">
+                     Entrar
+                  </a>
+                  <a class="button button-accent full-width" href="https://app.tipsforme.club/register">
+                     <span class="material-symbols-outlined">person_add</span>
+                     Criar conta grátis
+                  </a>
+               </div>
+            </div>
+         </nav>
+      </header>
+      <main>
+         <section id="top" class="hero">
+            <div class="hero-decoration hero-decoration-left"></div>
+            <div class="hero-decoration hero-decoration-right"></div>
+            <div class="container hero-content">
+               <span class="eyebrow">
+               <span class="material-symbols-outlined">auto_awesome</span>
+               <span data-i18n="heroBadge">Em desenvolvimento · MVP</span>
+               </span>
+               <h1 data-i18n="heroTitle">
+                  Divida as gorjetas do restaurante sem dor de cabeça.
+               </h1>
+               <p data-i18n="heroDescription">
+                  O tipsforme regista as gorjetas em dinheiro e multibanco de cada turno
+                  e divide automaticamente pelos colaboradores presentes.
+               </p>
+               <div class="hero-actions">
+                  <a
+                     class="button button-accent button-large hero-register-button"
+                     href="https://app.tipsforme.club/register"
+                  >
+                     <span class="material-symbols-outlined">rocket_launch</span>
+                     <span>Criar conta grátis</span>
+                  </a>
+
+                  <a class="button button-secondary button-large" href="#features">
+                     <span data-i18n="viewFeatures">Ver funcionalidades</span>
+                     <span class="material-symbols-outlined">arrow_forward</span>
+                  </a>
+               </div>
+
+               <p class="hero-login-note">
+                  Já possui uma conta?
+                  <a href="https://app.tipsforme.club/login">Entrar no TipsForMe</a>
+               </p>
+            </div>
+         </section>
+         <section class="product-preview section-small">
+            <div class="container">
+               <div class="section-heading centered">
+                  <h2 data-i18n="previewTitle">Um painel simples para o gestor do turno</h2>
+                  <p data-i18n="previewDescription">
+                     Selecione os colaboradores presentes, lance o dinheiro e o multibanco
+                     e deixe o cálculo connosco.
+                  </p>
+               </div>
+               <div class="dashboard-card">
+                  <div class="dashboard-header">
+                     <div>
+                        <strong data-i18n="todayShift">Turno de hoje</strong>
+                        <span> · 21/07/2026</span>
+                     </div>
+                     <span class="status-badge" data-i18n="openStatus">Aberto</span>
+                  </div>
+                  <div class="money-grid">
+                     <article class="money-card">
+                        <span class="card-label">
+                        <span class="material-symbols-outlined">payments</span>
+                        <span data-i18n="cash">Dinheiro</span>
+                        </span>
+                        <strong>€120,00</strong>
+                     </article>
+                     <article class="money-card">
+                        <span class="card-label">
+                        <span class="material-symbols-outlined">credit_card</span>
+                        <span data-i18n="multibanco">Multibanco</span>
+                        </span>
+                        <div class="amount-with-fee">
+                           <strong>€200,00</strong>
+                           <span class="fee-badge">
+                           <span class="material-symbols-outlined">percent</span>
+                           <span data-i18n="restaurantFee">Taxa 25%</span>
+                           </span>
+                        </div>
+                        <small data-i18n="netValue">Valor líquido: €150,00</small>
+                     </article>
+                  </div>
+                  <article class="employees-card">
+                     <div class="employees-header">
+                        <span class="card-label">
+                        <span class="material-symbols-outlined">groups</span>
+                        <span data-i18n="presentEmployees">Colaboradores presentes</span>
+                        </span>
+                        <span>4</span>
+                     </div>
+                     <div class="employee-list">
+                        <span class="employee-chip"><b>A</b> Ana</span>
+                        <span class="employee-chip"><b>M</b> Miguel</span>
+                        <span class="employee-chip"><b>J</b> João</span>
+                        <span class="employee-chip"><b>R</b> Rita</span>
+                     </div>
+                  </article>
+                  <div class="distribution-summary">
+                     <div>
+                        <small data-i18n="totalToSplit">Total a dividir</small>
+                        <strong>€270,00</strong>
+                     </div>
+                     <div class="per-employee">
+                        <small data-i18n="perEmployee">Por colaborador</small>
+                        <strong>€67,50</strong>
+                     </div>
+                     <button class="demo-button" type="button" data-i18n="closeShift">
+                     Fechar turno
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="problem" class="section">
+            <div class="container">
+               <div class="section-heading">
+                  <span class="section-tag" data-i18n="problemTag">O problema</span>
+                  <h2 data-i18n="problemTitle">
+                     Dividir gorjetas manualmente gera erros e desconfiança.
+                  </h2>
+               </div>
+               <div class="three-column-grid">
+                  <article class="info-card">
+                     <span class="icon-box material-symbols-outlined">receipt_long</span>
+                     <h3 data-i18n="manualTitle">Cálculos à mão</h3>
+                     <p data-i18n="manualDescription">
+                        Somar dinheiro e multibanco de cada turno consome tempo e é fácil errar.
+                     </p>
+                  </article>
+                  <article class="info-card">
+                     <span class="icon-box material-symbols-outlined">percent</span>
+                     <h3 data-i18n="feesTitle">Taxas esquecidas</h3>
+                     <p data-i18n="feesDescription">
+                        A taxa do restaurante pode ser aplicada automaticamente antes da divisão.
+                     </p>
+                  </article>
+                  <article class="info-card">
+                     <span class="icon-box material-symbols-outlined">monitoring</span>
+                     <h3 data-i18n="historyTitle">Falta de histórico</h3>
+                     <p data-i18n="historyDescription">
+                        Sem registo, o colaborador não sabe quanto recebeu nem quando.
+                     </p>
+                  </article>
+               </div>
+            </div>
+         </section>
+         <section id="how" class="section section-soft">
+            <div class="container">
+               <div class="section-heading">
+                  <span class="section-tag" data-i18n="howTag">Como funciona</span>
+                  <h2 data-i18n="howTitle">Três passos e o turno está fechado.</h2>
+               </div>
+               <ol class="three-column-grid steps-list">
+                  <li class="info-card">
+                     <span class="step-number">01</span>
+                     <h3 data-i18n="stepOneTitle">Registar o turno</h3>
+                     <p data-i18n="stepOneDescription">
+                        O gestor cria um novo lançamento e escolhe a data e o turno.
+                     </p>
+                  </li>
+                  <li class="info-card">
+                     <span class="step-number">02</span>
+                     <h3 data-i18n="stepTwoTitle">Lançar os valores</h3>
+                     <p data-i18n="stepTwoDescription">
+                        Informa dinheiro, multibanco e seleciona quem esteve presente.
+                     </p>
+                  </li>
+                  <li class="info-card">
+                     <span class="step-number">03</span>
+                     <h3 data-i18n="stepThreeTitle">Dividir automaticamente</h3>
+                     <p data-i18n="stepThreeDescription">
+                        O sistema desconta a taxa e divide igualmente entre os colaboradores.
+                     </p>
+                  </li>
+               </ol>
+            </div>
+         </section>
+         <section id="features" class="section">
+            <div class="container">
+               <div class="section-heading">
+                  <span class="section-tag" data-i18n="featuresTag">Funcionalidades do MVP</span>
+                  <h2 data-i18n="featuresTitle">
+                     Tudo o que o restaurante precisa para começar.
+                  </h2>
+               </div>
+               <div class="features-grid">
+                  <article class="info-card">
+                     <span class="icon-box material-symbols-outlined">account_balance_wallet</span>
+                     <h3 data-i18n="featureOneTitle">Dinheiro e multibanco</h3>
+                     <p data-i18n="featureOneDescription">
+                        Um único lançamento separa os dois métodos.
+                     </p>
+                  </article>
+                  <article class="info-card">
+                     <span class="icon-box material-symbols-outlined">percent</span>
+                     <h3 data-i18n="featureTwoTitle">Taxa configurável</h3>
+                     <p data-i18n="featureTwoDescription">
+                        Percentagem ajustável para cada restaurante.
+                     </p>
+                  </article>
+                  <article class="info-card">
+                     <span class="icon-box material-symbols-outlined">groups</span>
+                     <h3 data-i18n="featureThreeTitle">Divisão automática</h3>
+                     <p data-i18n="featureThreeDescription">
+                        Valores repartidos igualmente entre os presentes.
+                     </p>
+                  </article>
+                  <article class="info-card">
+                     <span class="icon-box material-symbols-outlined">calendar_month</span>
+                     <h3 data-i18n="featureFourTitle">Fechos programados</h3>
+                     <p data-i18n="featureFourDescription">
+                        Dinheiro no dia 15 e no último dia. Multibanco no fecho mensal.
+                     </p>
+                  </article>
+                  <article class="info-card">
+                     <span class="icon-box material-symbols-outlined">person</span>
+                     <h3 data-i18n="featureFiveTitle">Saldo do colaborador</h3>
+                     <p data-i18n="featureFiveDescription">
+                        Cada colaborador acompanha o saldo atualizado.
+                     </p>
+                  </article>
+                  <article class="info-card">
+                     <span class="icon-box material-symbols-outlined">list_alt</span>
+                     <h3 data-i18n="featureSixTitle">Extrato e histórico</h3>
+                     <p data-i18n="featureSixDescription">
+                        Consulta simples dos lançamentos e pagamentos realizados.
+                     </p>
+                  </article>
+               </div>
+            </div>
+         </section>
+         <section id="roadmap" class="section section-soft">
+            <div class="container">
+               <div class="section-heading">
+                  <span class="section-tag">Roadmap</span>
+                  <h2 data-i18n="roadmapTitle">Onde estamos e para onde vamos.</h2>
+               </div>
+               <div class="roadmap-grid">
+                  <article class="roadmap-card completed">
+                     <div class="roadmap-header">
+                        <span data-i18n="phaseOne">Fase 1</span>
+                        <b>Concluída</b>
+                     </div>
+                     <h3 data-i18n="roadmapOneTitle">MVP funcional</h3>
+                     <p data-i18n="roadmapOneDescription">
+                        Lançamentos, divisão automática e área do colaborador.
+                     </p>
+                  </article>
+
+                  <article class="roadmap-card completed">
+                     <div class="roadmap-header">
+                        <span data-i18n="phaseTwo">Fase 2</span>
+                        <b>Concluída</b>
+                     </div>
+                     <h3 data-i18n="roadmapTwoTitle">Testes e melhorias do MVP</h3>
+                     <p data-i18n="roadmapTwoDescription">
+                        Regras de pagamento, segurança, auditoria e melhorias de experiência.
+                     </p>
+                  </article>
+
+                  <article class="roadmap-card completed">
+                     <div class="roadmap-header">
+                        <span data-i18n="phaseThree">Fase 3</span>
+                        <b>Concluída</b>
+                     </div>
+                     <h3 data-i18n="roadmapThreeTitle">Relatórios e exportações</h3>
+                     <p data-i18n="roadmapThreeDescription">
+                        Relatórios mensais e exportações em PDF e CSV.
+                     </p>
+                  </article>
+
+                  <article class="roadmap-card active current-phase">
+                     <div class="roadmap-header">
+                        <span data-i18n="phaseFour">Fase 4</span>
+                        <b data-i18n="inProgress">Em curso</b>
+                     </div>
+                     <h3 data-i18n="roadmapFourTitle">Multi-restaurante e evolução móvel</h3>
+                     <p data-i18n="roadmapFourDescription">
+                        Cadastro público de empresas, isolamento multi-tenant e preparação da aplicação móvel.
+                     </p>
+                  </article>
+               </div>
+            </div>
+         </section>
+         <section class="section">
+            <div class="container">
+               <div class="portfolio-card">
+                  <div>
+                     <span class="section-tag" data-i18n="portfolioTag">Projeto de portfólio</span>
+                     <h2 data-i18n="portfolioTitle">
+                        Construído em público, do problema até à publicação.
+                     </h2>
+                     <p data-i18n="portfolioDescription">
+                        O tipsforme também demonstra aprendizagem prática em desenvolvimento
+                        web, regras de negócio, banco de dados, testes e entrega contínua.
+                     </p>
+                     <a
+                        class="button button-secondary"
+                        href="https://github.com/brunomartins85/tipsforme"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                     <span class="material-symbols-outlined">code</span>
+                     GitHub
+                     </a>
+                  </div>
+                  <div class="technology-list" aria-label="Tecnologias">
+                     <span>HTML5</span>
+                     <span>CSS3</span>
+                     <span>JavaScript</span>
+                     <span>PHP 8</span>
+                     <span>MySQL</span>
+                     <span>PDO</span>
+                     <span>SMTP</span>
+                     <span>PWA</span>
+                  </div>
+               </div>
+            </div>
+         </section>
+         <section id="support" class="section support-section">
+            <div class="container">
+               <div class="section-heading centered">
+                  <span class="section-tag" data-i18n="supportTag">Apoiar o projeto</span>
+                  <h2 data-i18n="supportTitle">Ajude a manter o tipsforme vivo.</h2>
+                  <p data-i18n="supportDescription">
+                     As contribuições ajudam a pagar domínio, hospedagem, testes e desenvolvimento.
+                     São voluntárias e não representam investimento ou participação financeira.
+                  </p>
+               </div>
+               <div class="support-grid">
+                  <article class="support-card">
+                     <span class="support-label">
+                     <span class="material-symbols-outlined">account_balance</span>
+                     <span data-i18n="bankTransfer">Transferência bancária</span>
+                     </span>
+                     <small data-i18n="accountHolder">Titular</small>
+                     <strong>BRUNO CORREA MARTINS</strong>
+                     <code id="ibanValue">PT50 0018 0003 6397 7136 0205 8</code>
+                     <button id="copyIbanButton" class="button button-primary full-width" type="button">
+                     <span class="material-symbols-outlined">content_copy</span>
+                     <span data-i18n="copyIban">Copiar IBAN</span>
+                     </button>
+                  </article>
+                  <article class="support-card">
+                     <span class="support-label">
+                     <span class="material-symbols-outlined">account_balance_wallet</span>
+                     PayPal
+                     </span>
+                     <p data-i18n="paypalDescription">
+                        Apoio internacional através do PayPal.
+                     </p>
+                     <a
+                        class="button button-primary full-width"
+                        href="https://www.paypal.com/paypalme/brunocmartins85"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                     <span data-i18n="supportPaypal">Apoiar via PayPal</span>
+                     <span class="material-symbols-outlined">arrow_forward</span>
+                     </a>
+                  </article>
+                  <article class="support-card highlighted">
+                     <span class="support-label">
+                     <span class="material-symbols-outlined">credit_card</span>
+                     Stripe
+                     </span>
+                     <p data-i18n="stripeDescription">
+                        Apoio por cartão através de um Payment Link seguro.
+                     </p>
+                     <a
+                        class="button button-accent full-width"
+                        href="https://donate.stripe.com/3cIdR872X6FA1XJh1XgQE00"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >
+                     <span data-i18n="supportStripe">Apoiar via Stripe</span>
+                     <span class="material-symbols-outlined">arrow_forward</span>
+                     </a>
+                  </article>
+               </div>
+               <p class="legal-note" data-i18n="legalNote">
+                  As contribuições são doações voluntárias. Não representam investimento,
+                  participação societária ou promessa de retorno financeiro.
+               </p>
+            </div>
+         </section>
+      </main>
+      <footer class="site-footer">
+         <div class="container footer-content">
+            <div class="footer-brand">
+               <span class="brand-icon">
+               <span class="brand-dot"></span>
+               t
+               </span>
+               <div>
+                  <strong>tipsforme</strong>
+                  <small data-i18n="developmentStatus">Em desenvolvimento ativo</small>
+               </div>
+            </div>
+            <div class="footer-links">
+               <a href="mailto:hello@tipsforme.app">hello@tipsforme.club</a>
+               <a
+                  href="https://github.com/brunomartins85/tipsforme"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >
+               GitHub
+               </a>
+               <span>© <span id="currentYear"></span></span>
+            </div>
+         </div>
+      </footer>
+      <div id="toast" class="toast" role="status" aria-live="polite"></div>
+      <script>
+         // Controla o menu mobile.
+         (function () {
+            const button = document.getElementById("mobileMenuButton");
+            const navigation = document.getElementById("mobileNavigation");
+            const icon = document.getElementById("mobileMenuIcon");
+
+            if (!button || !navigation || !icon) {
+               return;
+            }
+
+            function setMenuState(isOpen) {
+               navigation.hidden = !isOpen;
+               navigation.classList.toggle("is-open", isOpen);
+               document.body.classList.toggle("mobile-menu-open", isOpen);
+               button.setAttribute("aria-expanded", String(isOpen));
+               button.setAttribute("aria-label", isOpen ? "Fechar menu" : "Abrir menu");
+               navigation.setAttribute("aria-hidden", String(!isOpen));
+               icon.textContent = isOpen ? "close" : "menu";
+            }
+
+            button.addEventListener("click", function () {
+               const isOpen = button.getAttribute("aria-expanded") === "true";
+               setMenuState(!isOpen);
+            });
+
+            navigation.querySelectorAll("a").forEach(function (link) {
+               link.addEventListener("click", function () {
+                  setMenuState(false);
+               });
+            });
+
+            document.addEventListener("keydown", function (event) {
+               if (event.key === "Escape") {
+                  setMenuState(false);
+               }
+            });
+
+            window.addEventListener("resize", function () {
+               if (window.innerWidth > 900) {
+                  setMenuState(false);
+               }
+            });
+         })();
+      </script>
+   </body>
+</html>
